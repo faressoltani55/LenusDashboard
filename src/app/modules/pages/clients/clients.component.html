@@ -1,0 +1,137 @@
+<div class="row">
+  <!-- Client Details -->
+  <div class="col-lg-6">
+    <nb-card>
+      <nb-card-header style="text-align: center; margin-top: 3%">
+        <div class="text-center container">
+          <img *ngIf="user.imgUrl != ''; else elseblock2;" [src]="user.imgUrl" class="rounded-circle" alt="Profile picture" style="height: 12rem; width: 12rem">
+          <ng-template #elseblock2><img src="https://img2.pngio.com/download-free-png-account-avatar-head-human-male-man-people-avatar-person-png-512_512.png" class="rounded-circle" alt="Profile picture" style="height: 12rem; width: 12rem"></ng-template>
+        </div>
+        <h6 style="margin-top: 2%">
+          <Span *ngIf="user.firstName != ''; else elseblock;">{{user.firstName + " "+ user.lastName}}</Span>
+          <ng-template #elseblock>Select User</ng-template>
+        </h6>
+        <div style="text-align: right">
+          <button class="btn" (click)="enable()">
+            <mat-icon color="primary">edit</mat-icon>
+          </button>
+        </div>
+      </nb-card-header>
+      <nb-card-body>
+        <div class="full-name-inputs">
+          <input type="text" name="firstname" nbInput fullWidth placeholder="First Name" [(ngModel)]="user.firstName" [disabled]="disabled">
+          <input type="text" name="lastname" nbInput fullWidth placeholder="Last Name" [(ngModel)]="user.lastName" [disabled]="disabled">
+        </div>
+        <div class="full-name-inputs">
+          <input type="text" name="cin" nbInput fullWidth placeholder="CIN" [(ngModel)]="user.cin" [disabled]="disabled">
+          <input type="text" name="passport" nbInput fullWidth placeholder="Passport" [(ngModel)]="user.passport" [disabled]="disabled">
+        </div>
+        <input type="email" name="email" nbInput fullWidth placeholder="Email" [(ngModel)]="user.email" [disabled]="disabled">
+        <input type="text" name="country" nbInput fullWidth placeholder="Country" [(ngModel)]="user.country" [disabled]="disabled">
+        <input nbInput fullWidth placeholder="Pick Date" name="birthdate" class="col-6" [nbDatepicker]="formpicker" [(ngModel)]="user.birthDate" [disabled]="disabled">
+        <nb-datepicker #formpicker></nb-datepicker>
+        <nb-checkbox class="col-6" name="adult" status="primary" [(ngModel)]="user.adult" [disabled]="disabled">Adult</nb-checkbox>
+        <div class="full-name-inputs">
+          <input nbInput fullWidth placeholder="Pick Date" name="arrivaldate" [nbDatepicker]="arrivaldate" [(ngModel)]="user.arrivalDate" [disabled]="disabled">
+          <nb-datepicker #arrivaldate></nb-datepicker>
+          <input nbInput fullWidth placeholder="Pick Date" name="exitdate" [nbDatepicker]="exitdate" [(ngModel)]="user.exitDate" [disabled]="disabled">
+          <nb-datepicker #exitdate></nb-datepicker>
+        </div>
+        <nb-accordion multi>
+          <nb-accordion-item>
+            <nb-accordion-item-header>
+              Preferences
+            </nb-accordion-item-header>
+            <nb-accordion-item-body class="container">
+              <nb-accordion multi>
+                <nb-accordion-item>
+                  <nb-accordion-item-header>
+                    Primordial
+                  </nb-accordion-item-header>
+                  <nb-accordion-item-body>
+                    <ul>
+                      <li>Allergies : none</li>
+                      <li>Phobias : Cats - Heights</li>
+                      <li>Diseases : Diabetes - Heart Disease</li>
+                    </ul>
+                  </nb-accordion-item-body>
+                </nb-accordion-item>
+
+                <nb-accordion-item>
+                  <nb-accordion-item-header>
+                    Essential
+                  </nb-accordion-item-header>
+                  <nb-accordion-item-body>
+                    <ul>
+                      <li>View : Sea</li>
+                      <li>Room : Urbain Style - Orthopedic Mattress</li>
+                      <li>Food : Tropical fruits - Vegetarian</li>
+                    </ul>
+                  </nb-accordion-item-body>
+                </nb-accordion-item>
+
+                <nb-accordion-item>
+                  <nb-accordion-item-header>
+                    Others
+                  </nb-accordion-item-header>
+                  <nb-accordion-item-body>
+                    <ul>
+                      <li>Flower : Tulip</li>
+                      <li>Events : Night Clubs - Music Concerts</li>
+                    </ul>
+                  </nb-accordion-item-body>
+                </nb-accordion-item>
+              </nb-accordion>
+            </nb-accordion-item-body>
+          </nb-accordion-item>
+
+          <nb-accordion-item>
+            <nb-accordion-item-header>
+              Reviews
+            </nb-accordion-item-header>
+            <nb-accordion-item-body>
+              <ul>
+                <li *ngFor="let review of user.reviews">{{ review }}</li>
+              </ul>
+            </nb-accordion-item-body>
+          </nb-accordion-item>
+
+          <nb-accordion-item>
+            <nb-accordion-item-header>
+              Purchases
+            </nb-accordion-item-header>
+            <nb-accordion-item-body>
+              <ul>
+                <li *ngFor="let item of user.purchases">{{ item }}</li>
+              </ul>
+            </nb-accordion-item-body>
+          </nb-accordion-item>
+        </nb-accordion>
+        <div class="full-name-inputs">
+          <button fullWidth nbButton outline status="info" type="submit" (click)="save(user)" [disabled]="disabled">Save</button>
+          <button fullWidth nbButton outline status="danger" (click)="reset()">Cancel</button>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <!-- Client List -->
+  <div class="col-6">
+    <nb-card size="large">
+      <nb-card-header class="row">
+        <h6 class="col-3" style="margin-top: 1.4%">
+          Clients' List
+        </h6>
+        <nb-search class="col-2" type="rotate-layout"></nb-search>
+        <button class="btn ml-auto" (click)="resetSearch()">
+          <mat-icon color="primary">close</mat-icon>
+        </button>
+      </nb-card-header>
+      <nb-list>
+        <nb-list-item *ngFor="let user of users" (click)="selectUser(user)">
+          <nb-user [picture]="user.imgUrl" [name]="user.firstName +' '+ user.lastName" [title]="user.email">
+          </nb-user>
+        </nb-list-item>
+      </nb-list>
+    </nb-card>
+  </div>
+</div>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d3f8c4a-7cc9-4d09-86c2-9a45676ac1eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/data/LoginResponse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/data/client-card.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/data/contact-dot.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/data/contact-graph.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/data/contact.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/data/contacted.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/data/feedback.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/data/group.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/data/occupation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/data/request.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/data/room.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/data/temperature-card.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/helpers/auth-interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layouts/auth/auth-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layouts/auth/auth.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layouts/auth/auth.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layouts/auth/auth.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layouts/auth/auth.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layouts/auth/auth.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layouts/default/default-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layouts/default/default.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layouts/default/default.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layouts/default/default.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layouts/default/default.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layouts/default/default.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/clients/clients-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/clients/clients.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/clients/clients.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/clients/clients.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/clients/clients.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/clients/clients.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/dashboard/dashboard-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/dashboard/dashboard.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/feedbacks/feedbacks-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/feedbacks/feedbacks.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/health/health-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/health/health.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/requests/requests-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/requests/requests.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/reservations/reservations-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/pages/reservations/reservations.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/widgets/requests-widget/requests-widget..component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/widgets/requests-widget/requests-widget..component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/widgets/requests-widget/requests-widget.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/widgets/requests-widget/requests-widget.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/modules/widgets/widgets.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/security/auth-guard/auth-guard.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/security/auth-guard/auth-guard.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/security/auth/auth.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/security/auth/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/security/token/token-storage.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/security/token/token-storage.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/clients/clients.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/clients/clients.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/dashboard/dashboard.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/dashboard/dashboard.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/feedback/feedback.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/feedback/feedback.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/health/health.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/health/health.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/requests/requests.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/requests/requests.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/reservation/reservation.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/services/reservation/reservation.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/header/header.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/header/header.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/header/header.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/header/header.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/shared.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/sidenav/sidenav.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/sidenav/sidenav.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/sidenav/sidenav.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/shared/sidenav/sidenav.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/data/npmdepgraph.min10.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/iconic/css/material-design-iconic-font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/iconic/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/poppins/Poppins-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ubuntu/UFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ubuntu/Ubuntu-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ubuntu/Ubuntu-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ubuntu/Ubuntu-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ubuntu/Ubuntu-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ubuntu/Ubuntu-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ubuntu/Ubuntu-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ubuntu/Ubuntu-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ubuntu/Ubuntu-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/bg-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/lenusblanc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logolenus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/util.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1h31advE98fpiRa1sbGioU5Y1P2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="ts.external.directory.path" value="C:\Users\fares\WebstormProjects\lenusdashboard\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fares\WebstormProjects\lenusdashboard\src\app" />
+      <recent name="C:\Users\fares\WebstormProjects\lenusdashboard\src\app\data" />
+      <recent name="C:\Users\fares\WebstormProjects\lenusdashboard\src\app\security" />
+      <recent name="C:\Users\fares\WebstormProjects\lenusdashboard\src\assets\fonts" />
+      <recent name="C:\Users\fares\WebstormProjects\lenusdashboard\src\assets\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fares\WebstormProjects\lenusdashboard\src\assets\data" />
+      <recent name="C:\Users\fares\WebstormProjects\lenusdashboard\src\app\modules\pages" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests (lenusdashboard)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (lenusdashboard)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d3f8c4a-7cc9-4d09-86c2-9a45676ac1eb" name="Default Changelist" comment="" />
+      <created>1599225026895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599225026895</updated>
+      <workItem from="1599225028488" duration="13379000" />
+      <workItem from="1599465731828" duration="5542000" />
+      <workItem from="1599473207680" duration="69657000" />
+      <workItem from="1599772055764" duration="631000" />
+      <workItem from="1599813046931" duration="18496000" />
+      <workItem from="1599902564481" duration="416000" />
+      <workItem from="1599929755544" duration="3203000" />
+      <workItem from="1600016520649" duration="10346000" />
+      <workItem from="1600178543112" duration="2617000" />
+      <workItem from="1600252209884" duration="26553000" />
+      <workItem from="1600424246605" duration="1271000" />
+      <workItem from="1600511772510" duration="1620000" />
+      <workItem from="1600792536189" duration="709000" />
+      <workItem from="1600939109587" duration="89000" />
+      <workItem from="1601124631666" duration="10582000" />
+      <workItem from="1601136650175" duration="15765000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1601150895769">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1601150895769" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599825760629">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599825760629" />
+    <state width="1500" height="148" key="GridCell.Tab.0.bottom" timestamp="1601158241069">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600274127948" />
+    <state width="1496" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600355901598" />
+    <state width="1500" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601158241069" />
+    <state width="1500" height="148" key="GridCell.Tab.0.center" timestamp="1601158241069">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="148" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600274127948" />
+    <state width="1496" height="148" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600355901597" />
+    <state width="1500" height="148" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601158241069" />
+    <state width="1500" height="148" key="GridCell.Tab.0.left" timestamp="1601158241069">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="148" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600274127947" />
+    <state width="1496" height="148" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600355901596" />
+    <state width="1500" height="148" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601158241069" />
+    <state width="1500" height="148" key="GridCell.Tab.0.right" timestamp="1601158241069">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="148" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600274127948" />
+    <state width="1496" height="148" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600355901598" />
+    <state width="1500" height="148" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601158241069" />
+    <state x="277" y="55" key="SettingsEditor" timestamp="1599769845848">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599769845848" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1599744280838">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1599744280838" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1599825990461">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1599825990461" />
+  </component>
+</project>

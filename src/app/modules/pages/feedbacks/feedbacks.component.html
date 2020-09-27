@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-7">
+    <table class="table" style="background-color: white">
+      <thead style="background-color: #1E4DFF">
+      <tr style="color: white">
+        <th scope="col">Name</th>
+        <th scope="col">Rate</th>
+        <th scope="col">Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let feedback of dataSource; let i = index">
+        <th scope="row">{{feedback.name}}</th>
+        <td>{{feedback.rate}}</td>
+        <td>{{feedback.description}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-5">
+    <app-ratings-pi></app-ratings-pi>
+  </div>
+</div>

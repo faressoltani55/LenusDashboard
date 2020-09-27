@@ -1,0 +1,40 @@
+<nb-card size="large">
+  <nb-card-header>
+    <h6>
+      Clients requests
+    </h6>
+  </nb-card-header>
+  <nb-card-body>
+    <table class="table">
+      <thead style="background-color: #1E4DFF">
+        <tr style="color: white">
+          <th scope="col">Name</th>
+          <th scope="col">Room Number</th>
+          <th scope="col">Description</th>
+          <th scope="col">Status</th>
+          <th scope="col">#</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let request of requests; let i = index">
+        <th scope="row">{{request.name}}</th>
+        <td>{{request.room}}</td>
+        <td>{{request.description}}</td>
+        <td>
+          <nb-select placeholder="Basic" fullWidth status="basic" name="status" [(ngModel)]="request.status" (change)="change(i, request.status)">
+            <nb-option value="Pending">Pending</nb-option>
+            <nb-option value="Processing">Processing</nb-option>
+            <nb-option value="Treated">Treated</nb-option>
+          </nb-select>
+        </td>
+        <td>
+          <mat-icon *ngIf="request.status == 'Pending'" [ngStyle]="{color : 'red'}">query_builder</mat-icon>
+          <mat-icon *ngIf="request.status == 'Processing'" [ngStyle]="{color :  '#FFD42B'}">hourglass_empty</mat-icon>
+          <mat-icon *ngIf="request.status == 'Treated'" [ngStyle]="{color : '#4B71FF'}">done</mat-icon>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+  </nb-card-body>
+</nb-card>

@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col-6">
+    <nb-card size="large">
+      <nb-card-header>
+        <h6 style="padding-bottom: 1.7vh">
+          Temperature Alerts
+        </h6>
+      </nb-card-header>
+      <nb-card-body>
+        <table class="table">
+          <thead style="background-color: #1E4DFF">
+          <tr style="color: white">
+            <th scope="col">Name</th>
+            <th scope="col">Room Number</th>
+            <th scope="col">TemperatureCard</th>
+            <th scope="col">Date</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let tmp of tmpCards" (click)="searchContacts(tmp.resCode)">
+            <th scope="row">{{tmp.fullName}}</th>
+            <td>{{tmp.roomNumber}}</td>
+            <td>{{tmp.temperature}}</td>
+            <td>{{tmp.date}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-6">
+    <nb-card size="large">
+      <nb-card-header class="row">
+        <h6 class="col-6">
+          Contact Circles
+        </h6>
+        <div class="input-group col-6">
+          <div class="input-group-prepend">
+            <button class="input-group-text"><mat-icon>search</mat-icon></button>
+          </div>
+          <input type="text" class="form-control" name="resCode" [(ngModel)]="resCode" (keyup.enter)="searchContacts(resCode)">
+        </div>
+      </nb-card-header>
+      <nb-card-body>
+        <table class="table">
+          <thead style="background-color: #1E4DFF">
+          <tr style="color: white">
+            <th scope="col">Name</th>
+            <th scope="col">Room Number</th>
+            <th scope="col">Email</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let cli of contacted">
+            <th scope="row">{{cli.fullName}}</th>
+            <td>{{cli.roomNumber}}</td>
+            <td>{{cli.mobile}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

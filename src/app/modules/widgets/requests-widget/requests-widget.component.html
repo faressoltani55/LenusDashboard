@@ -1,0 +1,29 @@
+<nb-card size="medium">
+  <nb-card-header>
+    <div class="row">
+      <label for="selectfloor" class="col-md-6">
+        Clients' requests
+      </label>
+      <div class="col-md-6">
+          <select id="selectfloor" class="custom-select">
+            <option selected>Floor</option>
+            <option *ngFor="let floor of floors" [value]="floor">
+              {{ floor }}
+            </option>
+          </select>
+      </div>
+    </div>
+  </nb-card-header>
+  <nb-list>
+    <nb-list-item *ngFor="let request of requests" class="row">
+      <div class="col-lg-4">
+        <nb-user size="small" [name]="request.name" [title]="request.room.toString()" [picture]="request.picture"></nb-user>
+      </div>
+      <div class="col-lg-8">
+        <p>
+          {{ request.message }}
+        </p>
+      </div>
+    </nb-list-item>
+  </nb-list>
+</nb-card>

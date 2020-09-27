@@ -1,0 +1,83 @@
+<div class="row">
+  <div class="col-6" *ngIf="altered">
+    <nb-card size="large">
+      <nb-card-header>
+        Create Group
+      </nb-card-header>
+      <nb-card-body style="text-align: center">
+        <select [(ngModel)]="gsize" class="custom-select row" name="gsize" (change)="initialize()">
+          <option [ngValue]="0">Size</option>
+          <option *ngFor="let item of [].constructor(8); let i = index" [ngValue]="i">{{i}}</option>
+        </select>
+        <select *ngFor="let item of [].constructor(gsize); let i = index" [(ngModel)]="selectedPeople[i]" class="custom-select row" name="Number">
+          <option [ngValue]="emptyPerson">Client {{i+1}}</option>
+          <option *ngFor="let person of people" [ngValue]="person">{{person.fullName}} : {{person.reservationCode}}</option>
+        </select>
+      </nb-card-body>
+      <nb-card-footer>
+        <button class="btn btn-light" (click)="alter()">Room</button>
+        <button class="btn btn-primary float-right" (click)="save()">Save</button>
+      </nb-card-footer>
+    </nb-card>
+  </div>
+
+
+  <div class="col-6" *ngIf="!altered">
+    <nb-card size="large">
+      <nb-card-header>
+        Set Room
+      </nb-card-header>
+      <nb-card-body style="text-align: center">
+        <select [(ngModel)]="rsize" class="custom-select row" name="rsize" (change)="filterRooms()">
+          <option [value]="0">Size</option>
+          <option *ngFor="let item of [].constructor(5); let i = index" [ngValue]="i">{{i}}</option>
+        </select>
+        <select class="custom-select row" [(ngModel)]="selectedRoom" name="Number">
+          <option [ngValue]="0">Number</option>
+          <option *ngFor="let room of filteredRooms">{{room.number}}</option>
+        </select>
+        <select *ngFor="let item of [].constructor(rsize); let i = index" [(ngModel)]="selectedPeople[i]" class="custom-select row" name="Number">
+          <option [ngValue]="emptyPerson">Client {{i+1}}</option>
+          <option *ngFor="let person of roommates" [ngValue]="person">{{person.fullName}} : {{person.reservationCode}}</option>
+        </select>
+      </nb-card-body>
+      <nb-card-footer>
+        <button class="btn btn-light" (click)="alter()">Group</button>
+        <button class="btn btn-primary float-right" (click)="saveRoom()">Save</button>
+      </nb-card-footer>
+    </nb-card>
+  </div>
+
+
+  <div class="col-6">
+    <nb-card size="large">
+      <nb-card-body>
+        <table class="table">
+          <thead>
+          <tr>
+            <th scope="col">Room number</th>
+            <th scope="col">Clients</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let room of rooms">
+            <th scope="row">{{room.number}}</th>
+            <td>
+              <nb-accordion>
+                <nb-accordion-item>
+                  <nb-accordion-item-header>List of client</nb-accordion-item-header>
+                  <nb-accordion-item-body>
+                    <ul>
+                      <li *ngFor="let name of room.clientNames">{{name}}</li>
+                    </ul>
+                  </nb-accordion-item-body>
+                </nb-accordion-item>
+              </nb-accordion>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
