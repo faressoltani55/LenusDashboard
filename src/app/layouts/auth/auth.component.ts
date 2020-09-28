@@ -20,7 +20,7 @@ export class AuthComponent implements OnInit {
   ngOnInit() {
     if (this.tokenStorage.getToken()) {
       this.isLoggedIn = true;
-      this.router.navigateByUrl('/');
+      this.router.navigateByUrl('/dashboard');
     }
   }
 

@@ -5,6 +5,7 @@
       <tr style="color: white">
         <th scope="col">Name</th>
         <th scope="col">Rate</th>
+        <th scope="col">Department</th>
         <th scope="col">Description</th>
       </tr>
       </thead>
@@ -12,6 +13,7 @@
       <tr *ngFor="let feedback of dataSource; let i = index">
         <th scope="row">{{feedback.name}}</th>
         <td>{{feedback.rate}}</td>
+        <td>{{feedback.department}}</td>
         <td>{{feedback.description}}</td>
       </tr>
       </tbody>
