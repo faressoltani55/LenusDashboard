@@ -16,16 +16,14 @@
         </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let request of requests; let i = index">
+      <tr *ngFor="let request of r; let i = index">
         <th scope="row">{{request.name}}</th>
-        <td>{{request.room}}</td>
-        <td>{{request.description}}</td>
+        <td>{{request.roomNumber}}</td>
+        <td>{{request.text}}</td>
         <td>
-          <nb-select placeholder="Basic" fullWidth status="basic" name="status" [(ngModel)]="request.status" (change)="change(i, request.status)">
-            <nb-option value="Pending">Pending</nb-option>
-            <nb-option value="Processing">Processing</nb-option>
-            <nb-option value="Treated">Treated</nb-option>
-          </nb-select>
+          <select class="form-control" name="status" [(ngModel)]="request.status" (change)="changeStatus(request)">
+            <option *ngFor="let s of status" [ngValue]=s >{{s}}</option>
+          </select>
         </td>
         <td>
           <mat-icon *ngIf="request.status == 'Pending'" [ngStyle]="{color : 'red'}">query_builder</mat-icon>

@@ -35,6 +35,12 @@ export class RequestsComponent implements OnInit {
     }
   ];
 
+  status = [
+    "Pending",
+    "Processing",
+    "Treated"
+  ];
+
   r: Request[];
 
   constructor(private requestsService: RequestsService) { }
@@ -44,13 +50,14 @@ export class RequestsComponent implements OnInit {
   }
 
   getRequests() {
-    this.requestsService.getRequests().subscribe(
-      result => this.r = result
+    let deptId = JSON.parse(localStorage.getItem("auth-user")).deptId;
+    this.requestsService.getRequests(deptId).subscribe(
+      result => {this.r = result;
+      console.log(this.r);}
     )
   }
 
   changeStatus(request) {
     this.requestsService.changeStatus(request).subscribe();
   }
-
 }

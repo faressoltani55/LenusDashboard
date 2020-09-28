@@ -38,7 +38,7 @@
           <div class="input-group-prepend">
             <button class="input-group-text"><mat-icon>search</mat-icon></button>
           </div>
-          <input type="text" class="form-control" name="resCode" [(ngModel)]="resCode" (keyup.enter)="searchContacts(resCode)">
+          <input type="text" placeholder="Enter a reservation code" class="form-control" name="resCode" [(ngModel)]="resCode" (keyup.enter)="searchContacts(resCode)">
         </div>
       </nb-card-header>
       <nb-card-body>

@@ -16,14 +16,14 @@ export class SidenavComponent implements OnInit {
       home: true
     },
     {
-      title: 'Clients',
-      icon: 'people-outline',
-      link: '/dashboard/clients'
-    },
-    {
       title: 'Health',
       icon: 'plus-square-outline',
       link: '/dashboard/health'
+    },
+    {
+      title: 'Clients',
+      icon: 'people-outline',
+      link: '/dashboard/clients'
     },
     {
       title: 'Reservation',
