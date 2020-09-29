@@ -10,11 +10,11 @@
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let feedback of dataSource; let i = index">
+      <tr *ngFor="let feedback of feedbacks; let i = index">
         <th scope="row">{{feedback.name}}</th>
-        <td>{{feedback.rate}}</td>
+        <td>{{feedback.stars}}</td>
         <td>{{feedback.department}}</td>
-        <td>{{feedback.description}}</td>
+        <td>{{feedback.text}}</td>
       </tr>
       </tbody>
     </table>

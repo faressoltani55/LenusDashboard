@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Request} from "../../data/request";
 
-const BASE_URL = 'http://localhost:8080/dashboard/';
+const BASE_URL = 'https://volunteer-80c3f.appspot.com/dashboard/';
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };

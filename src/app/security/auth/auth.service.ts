@@ -6,7 +6,7 @@ import {TokenStorageService} from '../token/token-storage.service';
 import {map} from 'rxjs/operators';
 import {LoginResponse} from '../../data/LoginResponse';
 
-const AUTH_API = 'http://localhost:8080/hotel/login';
+const AUTH_API = 'https://volunteer-80c3f.appspot.com/hotel/login';
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };

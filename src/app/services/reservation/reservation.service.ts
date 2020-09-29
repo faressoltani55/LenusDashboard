@@ -4,7 +4,7 @@ import {ClientCard} from "../../data/client-card";
 import {ContactDot} from "../../data/contact-dot";
 import {Room} from "../../data/room";
 
-const BASE_URL = 'http://localhost:8080/dashboard/Test%20Hotel/';
+const BASE_URL = 'https://volunteer-80c3f.appspot.com/dashboard/Test%20Hotel/';
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };

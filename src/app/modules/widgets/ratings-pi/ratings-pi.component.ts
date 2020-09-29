@@ -12,43 +12,8 @@ export class RatingsPiComponent implements OnInit {
   ratings = [0,0,0,0,0];
 
 
-  option = {
-    tooltip: {
-      trigger: 'item',
-      formatter: '{a} <br/>{b} : {c} ({d}%)'
-    },
-    color: ['#FA5757','#FFC8DE','#FFD42B','#A3DAF9','#1E4DFF'],
+  option;
 
-    legend: {
-      // orient: 'vertical',
-      // top: 'middle',
-      bottom: 10,
-      left: 'center',
-      data: ['1 Star', '2 Stars', '3 Stars', '4 Stars', '5 Stars']
-    },
-    series: [
-      {
-        type: 'pie',
-        radius: '65%',
-        center: ['50%', '50%'],
-        selectedMode: 'single',
-        data: [
-          {value: 1, name: '1 Star'},
-          {value: 1, name: '2 Stars'},
-          {value: 2, name: '3 Stars'},
-          {value: 3, name: '4 Stars'},
-          {value: 3, name: '5 Stars'}
-        ],
-        emphasis: {
-          itemStyle: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: 'rgba(0, 0, 0, 0.5)'
-          }
-        }
-      }
-    ]
-  };
   constructor(private feedbackService : FeedbackService) { }
 
   ngOnInit(): void {
@@ -66,6 +31,43 @@ export class RatingsPiComponent implements OnInit {
             this.ratings[3] ++;
           else if(this.feedbacks[i].stars == 5)
             this.ratings[4] ++;
+          this.option = {
+            tooltip: {
+              trigger: 'item',
+              formatter: '{a} <br/>{b} : {c} ({d}%)'
+            },
+            color: ['#FA5757','#FFC8DE','#FFD42B','#A3DAF9','#1E4DFF'],
+
+            legend: {
+              // orient: 'vertical',
+              // top: 'middle',
+              bottom: 10,
+              left: 'center',
+              data: ['1 Star', '2 Stars', '3 Stars', '4 Stars', '5 Stars']
+            },
+            series: [
+              {
+                type: 'pie',
+                radius: '65%',
+                center: ['50%', '50%'],
+                selectedMode: 'single',
+                data: [
+                  {value: this.ratings[0], name: '1 Star'},
+                  {value: this.ratings[1], name: '2 Stars'},
+                  {value: this.ratings[2], name: '3 Stars'},
+                  {value: this.ratings[3], name: '4 Stars'},
+                  {value: this.ratings[4], name: '5 Stars'}
+                ],
+                emphasis: {
+                  itemStyle: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                  }
+                }
+              }
+            ]
+          };
       }
     );
     console.log(this.ratings)
