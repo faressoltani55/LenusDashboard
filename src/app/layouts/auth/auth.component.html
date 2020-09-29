@@ -11,13 +11,21 @@
       <form class="login100-form validate-form p-b-33 p-t-5" (submit)="onSubmit()">
 
         <div class="wrap-input100 validate-input" data-validate = "Enter username">
-          <input required class="input100" type="text" [(ngModel)]="email" name="email" placeholder="Email">
+          <input required class="input100" type="text" [(ngModel)]="email" name="email" placeholder="Email" aria-required="true" pattern="^[a-z0-9.]+@[a-z]+.[a-z]{2,4}$">
           <span class="focus-input100" data-placeholder="&#xef007;"></span>
+          <div *ngIf="emailEmpty || isLoginFailed || error" class="ml-5">
+            <small *ngIf="emailEmpty" class="text-danger">Email required<br></small>
+            <small *ngIf="isLoginFailed" class="text-danger">Please check your email<br></small>
+            <small *ngIf="error" class="text-danger">Please verify your credentials</small>
+          </div>
         </div>
 
         <div class="wrap-input100 validate-input" data-validate="Enter password">
-          <input required class="input100" type="password" [(ngModel)]="password" name="password" placeholder="Password">
+          <input required class="input100" type="password" [(ngModel)]="password" name="password" placeholder="Password" aria-required="true">
           <span class="focus-input100" data-placeholder="&#xf13e;"></span>
+          <div *ngIf="passwordEmpty" class="ml-5">
+            <small *ngIf="passwordEmpty" class="text-danger">Password required</small>
+          </div>
         </div>
 
         <div class="container-login100-form-btn m-t-32">
