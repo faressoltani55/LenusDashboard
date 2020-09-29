@@ -6,6 +6,7 @@ import { RequestsWidgetComponent } from './requests-widget/requests-widget..comp
 import {NgxEchartsModule} from "ngx-echarts";
 import { ContactComponent } from './contact/contact.component';
 import { RatingsPiComponent } from './ratings-pi/ratings-pi.component';
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -15,17 +16,18 @@ import { RatingsPiComponent } from './ratings-pi/ratings-pi.component';
   RequestsWidgetComponent,
   ContactComponent,
   RatingsPiComponent],
-  imports: [
-    CommonModule,
-    NbCardModule,
-    NgxEchartsModule.forRoot({
-      echarts: () => import('echarts'),
-    }),
-    NbListModule,
-    NbUserModule,
-    NbSearchModule,
-    NbSelectModule
-  ],
+    imports: [
+        CommonModule,
+        NbCardModule,
+        NgxEchartsModule.forRoot({
+            echarts: () => import('echarts'),
+        }),
+        NbListModule,
+        NbUserModule,
+        NbSearchModule,
+        NbSelectModule,
+        FormsModule
+    ],
   exports: [
     OccupationComponent,
     RequestsWidgetComponent,

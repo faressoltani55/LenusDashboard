@@ -5,9 +5,9 @@
         Clients' requests
       </label>
       <div class="col-md-6">
-          <select id="selectfloor" class="custom-select">
-            <option selected>Floor</option>
-            <option *ngFor="let floor of floors" [value]="floor">
+          <select id="selectfloor" class="custom-select" name="floor" [(ngModel)]="floor" (change)="reSelect()">
+            <option selected [ngValue]="0">Floor</option>
+            <option *ngFor="let floor of floors" [ngValue]="floor">
               {{ floor }}
             </option>
           </select>
@@ -15,13 +15,13 @@
     </div>
   </nb-card-header>
   <nb-list>
-    <nb-list-item *ngFor="let request of requests" class="row">
+    <nb-list-item *ngFor="let request of r" class="row">
       <div class="col-lg-4">
-        <nb-user size="small" [name]="request.name" [title]="request.room.toString()" [picture]="request.picture"></nb-user>
+        <nb-user size="small" [name]="request.name" [title]="request.roomNumber.toString()"></nb-user>
       </div>
       <div class="col-lg-8">
         <p>
-          {{ request.message }}
+          {{ request.text }}
         </p>
       </div>
     </nb-list-item>
