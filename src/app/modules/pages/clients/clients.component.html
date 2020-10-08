@@ -50,9 +50,7 @@
                   </nb-accordion-item-header>
                   <nb-accordion-item-body>
                     <ul>
-                      <li>Allergies : none</li>
-                      <li>Phobias : Cats - Heights</li>
-                      <li>Diseases : Diabetes - Heart Disease</li>
+                      <li *ngFor="let pref of user.primordials"> {{pref}}</li>
                     </ul>
                   </nb-accordion-item-body>
                 </nb-accordion-item>
@@ -63,9 +61,7 @@
                   </nb-accordion-item-header>
                   <nb-accordion-item-body>
                     <ul>
-                      <li>View : Sea</li>
-                      <li>Room : Urbain Style - Orthopedic Mattress</li>
-                      <li>Food : Tropical fruits - Vegetarian</li>
+                      <li *ngFor="let pref of user.essentials"> {{pref}}</li>
                     </ul>
                   </nb-accordion-item-body>
                 </nb-accordion-item>
@@ -76,8 +72,7 @@
                   </nb-accordion-item-header>
                   <nb-accordion-item-body>
                     <ul>
-                      <li>Flower : Tulip</li>
-                      <li>Events : Night Clubs - Music Concerts</li>
+                      <li *ngFor="let pref of user.others"> {{pref}}</li>
                     </ul>
                   </nb-accordion-item-body>
                 </nb-accordion-item>
@@ -102,7 +97,7 @@
             </nb-accordion-item-header>
             <nb-accordion-item-body>
               <ul>
-                <li *ngFor="let item of user.purchases">{{ item }}</li>
+                <li *ngFor="let item of user.perchases">{{ item }}</li>
               </ul>
             </nb-accordion-item-body>
           </nb-accordion-item>

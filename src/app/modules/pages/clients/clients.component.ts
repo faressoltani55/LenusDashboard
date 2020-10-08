@@ -19,7 +19,7 @@ const emptyUser : ClientCard = {
   essentials : [],
   others : [],
   reviews: [],
-  purchases: []
+  perchases: []
 };
 
 @Component({

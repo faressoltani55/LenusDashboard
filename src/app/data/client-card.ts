@@ -14,5 +14,5 @@ export interface ClientCard {
   essentials : [],
   others : [],
   reviews: string[],
-  purchases: string[]
+  perchases: string[]
 }
